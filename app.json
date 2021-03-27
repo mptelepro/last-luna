@@ -1,0 +1,68 @@
+{
+      "name": "Luna",
+      "description": "An Anime themed Telegram group management bot.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "Hexzy"
+      ],   
+   "repository": "https://github.com/only-music/LunaChatBot",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }     
+  ],      
+   "env": {
+      "bot_token": {
+         "description": "Your bot token. Get one from @BotFather duh",
+         "required": true,
+         "value": ""
+      },
+      "api_id": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "api_hash": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },    
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "Your postgres sql db, empty this field if you dont have one.",
+         "required": false,
+         "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },      
+      "owner_id": {
+         "description": "Your user ID as an integer.",
+         "required": true,
+         "value": "1469528232"
+      },
+      "bot_id": {
+         "description": "Your bot id",
+         "value": "Prabha_sha"      
+      }
+   },
+   "keywords": [
+      "telegram",
+      "anime",
+      "group",
+      "manager",
+      "Hexzy"
+   ],
+   "name": "Luna",
+   "repository": "https://github.com/only-music/LunaChatBot"
+}
